@@ -11,10 +11,7 @@ export default (req, res) => {
           Location: '/bots/deepbot'
         });
         res.end();
-        return;
       })
     }
   }
-
-  res.send("There was an issue when visiting this page.");
 }

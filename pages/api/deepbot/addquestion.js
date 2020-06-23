@@ -21,9 +21,14 @@ try {
 }
 
 export default (req, res) => {
+  console.log("plz")
   if (req.method == "POST") {
     const question = req.body.text;
     const author = req.body.user_name;
+
+    console.log({
+      question, author
+    });
 
     // ADD QUESTION TO DATABASE
     const newQuestion = new QuestionModel({
@@ -37,6 +42,9 @@ export default (req, res) => {
       console.log("newQuestion", newQuestion);
       console.log("mongoUrl", mongoUrl);
     });
+
+    console.log("newQuestion", newQuestion);
+    console.log("mongoUrl", mongoUrl);
 
     res.send({
       response_type: "in_channel",

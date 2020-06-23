@@ -7,13 +7,14 @@ export default (req, res) => {
   if (req.query) {
     if (req.query.code) {
       axios.get(`https://slack.com/api/oauth.v2.access?client_id=${client_id}&client_secret=${client_secret}&code=${req.query.code}`).then((response) => {
-        res.send(response);
+        res.writeHead(301, {
+          Location: '/bots/deepbot'
+        });
+        res.end();
+        return;
       })
     }
   }
 
-  // res.writeHead(301, {
-  //   Location: '/bots/deepbot'
-  // });
-  // res.end();
+  res.send("There was an issue when visiting this page.");
 }

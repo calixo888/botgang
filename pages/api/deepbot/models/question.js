@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 let mongoUrl = process.env.MONGODB_URL || "mongodb://localhost:27017";
 mongoUrl = mongoUrl + "/deepbot";
+console.log("mongoUrl", mongoUrl);
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true

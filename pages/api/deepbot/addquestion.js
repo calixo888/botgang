@@ -30,6 +30,11 @@ export default (req, res) => {
       question, author
     });
     newQuestion.save((err, newQuestion) => {
+      if (err) {
+        console.log("err");
+        throw err;
+      }
+      console.log("newQuestion", newQuestion);
       console.log("mongoUrl", mongoUrl);
     });
 

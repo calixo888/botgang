@@ -1,21 +1,24 @@
 const mongoose = require("mongoose");
 
 let mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/deepbot";
-console.log("mongoUrl", mongoUrl);
+
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: false
 });
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, '[-] Connection error'));
 
 let questionSchema = new mongoose.Schema({
   question: String,
   author: String
 });
 
-const QuestionModel = mongoose.model("Question", questionSchema);
+let QuestionModel;
+try {
+  QuestionModel = mongoose.model("Question");
+} catch {
+  QuestionModel = mongoose.model("Question", questionSchema);
+}
 
 export default (req, res) => {
   if (req.method == "POST") {

@@ -26,7 +26,9 @@ export default (req, res) => {
     const newQuestion = new QuestionModel({
       question, author
     });
-    newQuestion.save((err, newQuestion) => { if (err) throw err; });
+    newQuestion.save((err, newQuestion) => {
+      console.log("mongoUrl", mongoUrl);
+    });
 
     res.send({
       response_type: "in_channel",

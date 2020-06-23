@@ -6,8 +6,9 @@ export default (req, res) => {
 
   if (req.query) {
     if (req.query.code) {
-      axios.get(`https://slack.com/api/oauth.v2.access?client_id=${client_id}&client_secret=${client_secret}&code=${req.query.code}`);
-      console.log(`https://slack.com/api/oauth.v2.access?client_id=${client_id}&client_secret=${client_secret}&code=${req.query.code}`);
+      axios.get(`https://slack.com/api/oauth.v2.access?client_id=${client_id}&client_secret=${client_secret}&code=${req.query.code}`).then((response) => {
+        res.send(response);
+      })
     }
   }
 
@@ -15,5 +16,4 @@ export default (req, res) => {
   //   Location: '/bots/deepbot'
   // });
   // res.end();
-  res.send(`https://slack.com/api/oauth.v2.access?client_id=${client_id}&client_secret=${client_secret}&code=${req.query.code}`);
 }

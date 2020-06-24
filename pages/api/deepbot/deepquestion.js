@@ -13,11 +13,6 @@ handler.post(async (req, res) => {
       response_type: "in_channel",
       text: `Question by ${question.author}: ${question.question}`
     });
-
-    req.db.collection("questions").remove({ _id: question._id }, (err) => {
-      if (err) throw err;
-      console.log("delete");
-    });
   } else {
     res.send({
       response_type: "in_channel",

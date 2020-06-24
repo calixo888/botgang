@@ -10,7 +10,7 @@ handler.post(async (req, res) => {
   const author = req.body.user_name;
 
   const test = await req.db.collection("questions").save({
-    question: "This is a question"
+    question, author
   });
 
   res.send({

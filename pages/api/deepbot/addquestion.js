@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-let mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/deepbot";
+let mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/botgang-deepbot";
 
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
@@ -21,30 +21,17 @@ try {
 }
 
 export default (req, res) => {
-  console.log("plz")
   if (req.method == "POST") {
     const question = req.body.text;
     const author = req.body.user_name;
-
-    console.log({
-      question, author
-    });
 
     // ADD QUESTION TO DATABASE
     const newQuestion = new QuestionModel({
       question, author
     });
     newQuestion.save((err, newQuestion) => {
-      if (err) {
-        console.log("err");
-        throw err;
-      }
-      console.log("newQuestion", newQuestion);
-      console.log("mongoUrl", mongoUrl);
+      if (err) throw err;
     });
-
-    console.log("newQuestion", newQuestion);
-    console.log("mongoUrl", mongoUrl);
 
     res.send({
       response_type: "in_channel",

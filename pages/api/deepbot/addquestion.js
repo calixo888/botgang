@@ -28,6 +28,7 @@ export default (req, res) => {
     const author = req.body.user_name;
 
     // ADD QUESTION TO DATABASE
+    console.log("QuestionModel", QuestionModel);
     console.log("mongoUrl", mongoUrl);
     const newQuestion = new QuestionModel({
       question, author

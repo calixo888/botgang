@@ -6,9 +6,7 @@ const handler = nextConnect();
 handler.use(middleware);
 
 handler.post(async (req, res) => {
-  const questionCollection = req.db.collection("questions");
-
-  const question = await questionCollection.findOne();
+  const question = await req.db.collection("questions").findOne();
 
   console.log("questions", questions);
   console.log("question", question);
@@ -19,10 +17,10 @@ handler.post(async (req, res) => {
       text: `Question by ${question.author}: ${question.question}`
     });
 
-    questionCollection.remove({ _id: question._id }, (err) => {
-      if (err) throw err;
-      console.log("delete");
-    });
+    // req.db.collection("questions").remove({ _id: question._id }, (err) => {
+    //   if (err) throw err;
+    //   console.log("delete");
+    // });
   } else {
     res.send({
       response_type: "in_channel",

@@ -2,12 +2,6 @@ const mongoose = require("mongoose");
 
 const mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/botgang-deepbot";
 
-// mongoose.connect(mongoUrl, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false
-// });
-
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
   useCreateIndex: true,

@@ -11,6 +11,8 @@ handler.post(async (req, res) => {
     if (err) throw err;
 
     const question = questions[0];
+    console.log("questions", questions);
+    console.log("question", question);
 
     if (question) {
       res.send({
@@ -25,7 +27,7 @@ handler.post(async (req, res) => {
     }
 
     // DELETE QUESTION
-    questionCollection.remove({ _id: question._id }, err => { if (err) throw err; })
+    questionCollection.remove({ _id: question._id }, err => { if (err) throw err; console.log("delete"); })
   });
 });
 

@@ -2,11 +2,19 @@ const mongoose = require("mongoose");
 
 const mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/botgang-deepbot";
 
+// mongoose.connect(mongoUrl, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false
+// });
+
 mongoose.connect(mongoUrl, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
-});
+  useCreateIndex: true,
+  useUnifiedTopology: true
+})
+  .then(() => console.log( 'Database Connected' ))
+  .catch(err => console.log( err ));
 
 let questionSchema = new mongoose.Schema({
   question: String,

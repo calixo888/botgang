@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default (req, res) => {
   const client_id = process.env.DEEPBORG_CLIENT_ID;
-  const client_secret = process.env.DEEPBORG_CLIENT_SECRET;
+  const client_secret = process.env.DEEPBORG_CLIENT_SECRET; 
 
   if (req.query) {
     if (req.query.code) {

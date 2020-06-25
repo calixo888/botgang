@@ -6,7 +6,7 @@ const handler = nextConnect();
 handler.use(middleware);
 
 handler.post(async (req, res) => {
-  const question = await req.db.collection("deepbot-questions").findOne();
+  const question = await req.db.collection("deepborg-questions").findOne();
 
   if (question) {
     res.send({

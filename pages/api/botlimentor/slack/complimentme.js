@@ -7,7 +7,7 @@ const handler = nextConnect();
 handler.use(middleware);
 
 handler.post(async (req, res) => {
-  const response = await axios.get("https://responser.com/api");
+  const response = await axios.get("https://complimentr.com/api");
 
   res.send({
     response_type: "in_channel",

@@ -8,10 +8,11 @@ handler.use(middleware);
 
 handler.post(async (req, res) => {
   const response = await axios.get("https://complimentr.com/api");
+  const compliment = response.data.compliment;
 
   res.send({
     response_type: "in_channel",
-    text: response.compliment
+    text: `${compliment.charAt(0).toUpperCase() + compliment.slice(1)} :heart:`
   });
 });
 

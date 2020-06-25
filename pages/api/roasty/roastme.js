@@ -11,7 +11,7 @@ handler.post(async (req, res) => {
 
   res.send({
     response_type: "in_channel",
-    text: roast
+    text: roast.data.insult
   });
 });
 

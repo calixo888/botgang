@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb';
 import nextConnect from 'next-connect';
 
-const mongoUrl = process.env.DEEPBOT_MONGO_URL || "mongodb://localhost:27017/botgang";
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost:27017/botgang";
 
 const client = new MongoClient(mongoUrl, {
   useNewUrlParser: true,

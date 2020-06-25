@@ -9,7 +9,7 @@ handler.post(async (req, res) => {
   const question = req.body.text;
   const author = req.body.user_name;
 
-  const test = await req.db.collection("questions").save({
+  const test = await req.db.collection("deepbot-questions").save({
     question, author
   });
 

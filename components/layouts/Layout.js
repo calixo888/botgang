@@ -3,11 +3,11 @@ import Link from 'next/link'
 export default ({ children }) => {
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-dark">
+      <nav className="navbar navbar-expand-md navbar-light">
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
-              <img src="/img/botgang/botgang-side.png" alt="Bot Gang Logo" />
+              <img style={{ width: "200px" }} src="/img/botgang/botgang-side.png" alt="Bot Gang Logo" />
             </a>
           </Link>
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbar-target">

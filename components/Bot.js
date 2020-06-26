@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Tag from './Tag'
 import styles from '../styles/modules/bot.module.scss'
 
 export default ({ data }) => {
@@ -10,6 +11,10 @@ export default ({ data }) => {
         <div>
           <h3>{data.name}</h3>
           <p>{data.description}</p>
+          
+          {data.tags.map((tag, key) => {
+            return <Tag type={tag} />
+          })}
         </div>
       </div>
     </Link>

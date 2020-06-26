@@ -1,0 +1,16 @@
+.tag {
+  background-color: #ddd;
+  padding: 5px 7.5px 7.5px 7.5px;
+  border-radius: 3px;
+  margin-right: 5px;
+
+  & span {
+    font-size: 14px;
+
+    & img {
+      width: 20px;
+      margin-right: 2.5px;
+      transform: translateY(-1px);
+    }
+  }
+}

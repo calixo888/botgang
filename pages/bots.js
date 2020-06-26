@@ -5,8 +5,8 @@ import Bot from '../components/Bot'
 
 export default () => {
   const [bots, setBots] = useState([
-    { name: "Bot 1", description: "This is a bot.", image: "/img/bots/bot.png", path: "/bots/deepborg" },
-    { name: "Bot 2", description: "This is a bot again.", image: "/img/bots/bot.png", path: "/bots/roasty" }
+    { name: "Bot 1", description: "This is a bot.", image: "/img/bots/bot.png", path: "/bots/deepborg", tags: ["slack"] },
+    { name: "Bot 2", description: "This is a bot again.", image: "/img/bots/bot.png", path: "/bots/roasty", tags: ["slack", "discord"] }
   ]);
 
   return (

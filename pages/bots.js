@@ -4,8 +4,9 @@ import Bot from '../components/Bot'
 
 export default () => {
   const bots = [
-    { name: "Bot 1", description: "This is a bot.", image: "/img/bots/bot.png", path: "/bots/deepborg", tags: ["slack"] },
-    { name: "Bot 2", description: "This is a bot again.", image: "/img/bots/bot.png", path: "/bots/roasty", tags: ["slack", "discord"] }
+    { name: "Deepborg", description: "Let's think deeper.", image: "/img/bots/deepborg.png", path: "/bots/deepborg", tags: ["slack"] },
+    { name: "Roasty", description: "Self-esteem? What's that?", image: "/img/bots/roasty.png", path: "/bots/roasty", tags: ["slack"] },
+    { name: "Botlimentor", description: "Let's feel good about ourselves", image: "/img/bots/botlimentor.png", path: "/bots/botlimentor", tags: ["slack"] }
   ];
 
   return (

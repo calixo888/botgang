@@ -5,13 +5,7 @@ export default (req, res) => {
   const client_id = process.env.BOTLIMENTOR_CLIENT_ID;
   const oAuthLink = `https://slack.com/oauth/v2/authorize?client_id=${client_id}&scope=commands&user_scope=`
 
-  const data = {
-    name: "Bot 1",
-    description: "This is a bot.",
-    image: "/img/bots/bot.png",
-    path: "/bots/botlimentor",
-    tags: ["slack"]
-  }
+  const data = { name: "Botlimentor", description: "Let's feel good about ourselves", image: "/img/bots/botlimentor.png", path: "/bots/botlimentor", tags: ["slack"] };
 
   return (
     <Layout>
@@ -20,7 +14,7 @@ export default (req, res) => {
           <Bot data={data} />
 
           <p className="mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Ever feeling down or insecure about anything? Allow Botlimentor to encourage and compliment you, even in the weirdest, uncomfortable, and most unorthodox ways. It may seem weird at first but don't worry, you'll get used to it 😉
           </p>
 
           <div className="text-right">

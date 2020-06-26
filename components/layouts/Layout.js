@@ -44,7 +44,81 @@ export default ({ children }) => {
           </div>
         </div>
       </nav>
-      {children}
+
+      <div className="container py-5">
+        {children}
+      </div>
+
+      <footer>
+        <div className="container">
+          <div className="footer-grid">
+            <div className="copyright">
+              <img src="/img/botgang/botgang-bottom.png" alt="Bot Gang Logo" />
+              <br/>
+              <small>&copy; 2020 Bot Gang. Created by <a href="https://www.calix.dev" target="_blank">Calix Huang</a>.</small>
+            </div>
+            <div>
+              <h3>Navigate</h3>
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>Home</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    <a>About</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <a>Contact</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/bots">
+                    <a>Bots</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/communities">
+                    <a>Communities</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Legal</h3>
+              <ul>
+                <li>
+                  <Link href="/legal/terms-of-service">
+                    <a>Terms of Service</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/legal/privacy-policy">
+                    <a>Privacy Policy</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Connect with us!</h3>
+              <div className="social-icons">
+                <a href="#" target="_blank">
+                  <img src="/img/icons/slack.png" />
+                </a>
+                <a href="#" target="_blank">
+                  <img src="/img/icons/discord.png" />
+                </a>
+                <a href="#" target="_blank">
+                  <img src="/img/icons/github.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

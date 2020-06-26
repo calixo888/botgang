@@ -17,13 +17,18 @@ export default () => {
       <header>
         <div className="split-grid header-grid">
           <div>
-            <h1>This. is. Bot Gang.</h1>
+            <h1 style={{
+              fontSize: "60px"
+            }}>This. is. Bot Gang.</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A collection of the baddest, gnarliest, and most edgy bots you'll ever hear about, and it's all listed for anyone to use. We'll infiltrate your communities, do what our descriptions says we do, and vanish.
+            </p>
+            <p>
+              Make your Slack, Discord, or your life in general more gangsta with The Bot Gang.
             </p>
             <div className="cta-buttons">
-              <Button link="#" text="Button" type="ghost" />
-              <Button link="#" text="Button" type="solid" />
+              <Button link="/about" text="The Gang Leader" type="ghost" />
+              <Button link="/bots" text="Our Bot Gangstas" type="solid" />
             </div>
           </div>
 
@@ -32,7 +37,7 @@ export default () => {
       </header>
 
       <section>
-        <h1>Featured Bots</h1>
+        <h1>Featured Bot Gangsters</h1>
         <div className="bots-grid">
           {featuredBots.map((bot, key) => {
             return <Bot data={bot} key={key} />
@@ -44,14 +49,14 @@ export default () => {
         <h1>FAQs</h1>
         <div className="faq-grid">
           <div>
-            <Accordion title="hello" content="content" />
-            <Accordion title="hello" content="content" />
-            <Accordion title="hello" content="content" />
+            <Accordion title="What is the Bot Gang?" content="The Bot Gang is a collection of Slack/Discord bots that are open for distrubtion and installation into your workspaces/servers for free." />
+            <Accordion title="Why does the Bot Gang exist?" content="Why wouldn't we? We're just a bunch of robotic gangsters coming for your virtual and digital communities :)" />
+            <Accordion title="What's the goal of Bot Gang?" content="To make the world a more ghetto and robotic place - by spreading digital crime around all virtual communities." />
           </div>
           <div>
-            <Accordion title="hello" content="content" />
-            <Accordion title="hello" content="content" />
-            <Accordion title="hello" content="content" />
+            <Accordion title="Who's the gang leader?" content="Calix Huang is the almighty gang leader. He makes the rules. Whatever he says, goes. Anyone who messes with him will surely face the consequences." />
+            <Accordion title="Where's the Bot Gang located?" content="Everywhere, and nowhere. We appear, and then we're gone, and you won't even notice." />
+            <Accordion title="Should I be scared?" content="Yes." />
           </div>
         </div>
       </section>

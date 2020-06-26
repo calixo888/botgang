@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
-import { initGA, logPageView } from '../utils/analytics.js'
+import { initGA, logPageView } from '../../middleware/analytics.js'
 
 export default ({ children }) => {
   useEffect(() => {

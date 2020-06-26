@@ -12,7 +12,7 @@ export default ({ title, content }) => {
 
   return (
     <div className={styles.accordion}>
-      <div onClick={extend} className={styles.accordionHeader}>
+      <div onClick={extend}>
         <h4>
           {title}
         </h4>

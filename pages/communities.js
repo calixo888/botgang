@@ -16,8 +16,10 @@ export default () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
 
-          <a className="btn btn-secondary mr-2" href="#" target="_blank">Join the Slack!</a>
-          <a className="btn btn-info" href="#" target="_blank">Join the Discord!</a>
+          <div className="cta-buttons">
+            <a className="btn btn-secondary" href="#" target="_blank">Join the Slack!</a>
+            <a className="btn btn-info" href="#" target="_blank">Join the Discord!</a>
+          </div>
         </div>
       </div>
     </Layout>

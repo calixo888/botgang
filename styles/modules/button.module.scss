@@ -1,0 +1,31 @@
+.solidButton {
+  padding: 10px 15px;
+  font-size: 17.5px;
+  border-radius: 3px;
+  color: white;
+  background-color: darkgrey;
+  border: 2px solid darkgrey;
+  text-align: center;
+
+  &:hover {
+    background-color: darkgrey;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.ghostButton {
+  padding: 10px 15px;
+  font-size: 17.5px;
+  border-radius: 3px;
+  color: darkgrey;
+  background-color: transparent;
+  border: 2px solid darkgrey;
+  text-align: center;
+
+  &:hover {
+    background-color: darkgrey;
+    color: white;
+    text-decoration: none;
+  }
+}

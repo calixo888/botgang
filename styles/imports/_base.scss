@@ -2,12 +2,18 @@ body {
   background-color: #fafafa;
 }
 
+.cta-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7.5px;
+}
+
 .split-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 50px;
 
-  & img {
+  & > img {
     width: 100%;
   }
 }

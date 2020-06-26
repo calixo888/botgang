@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Link from 'next/link'
 import Bot from '../components/Bot'
 import Accordion from '../components/Accordion'
+import Button from '../components/Button'
 import Layout from '../components/layouts/Layout'
 
 export default () => {
@@ -21,12 +22,8 @@ export default () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="cta-buttons">
-              <Link href="#">
-                <a className="btn btn-secondary">Button</a>
-              </Link>
-              <Link href="#">
-                <a className="btn btn-info">Button</a>
-              </Link>
+              <Button link="#" text="Button" type="ghost" />
+              <Button link="#" text="Button" type="solid" />
             </div>
           </div>
 
@@ -35,7 +32,7 @@ export default () => {
       </header>
 
       <section>
-        <h1>Featured Bot Gangsters</h1>
+        <h1>Featured Bots</h1>
         <div className="bots-grid">
           {featuredBots.map((bot, key) => {
             return <Bot data={bot} key={key} />

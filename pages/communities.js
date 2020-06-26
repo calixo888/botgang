@@ -4,7 +4,7 @@ import Layout from '../components/layouts/Layout'
 export default () => {
   return (
     <Layout>
-      <div className="split-grid"> 
+      <div className="split-grid">
         <img src="/img/illustrations/community.svg" />
 
         <div>

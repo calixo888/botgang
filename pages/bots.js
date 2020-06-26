@@ -11,7 +11,7 @@ export default () => {
 
   return (
     <Layout>
-      <h1>Bots</h1>
+      <h1>All Bots</h1>
 
       <div className="bots-grid">
         {bots.map((bot, key) => {

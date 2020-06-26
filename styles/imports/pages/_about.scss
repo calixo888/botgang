@@ -1,0 +1,33 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 50px;
+
+  & .calix-picture {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(0,0,0,.5);
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(6, 35px);
+    grid-gap: 7.5px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 25px;
+
+    & .calix-picture {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+}

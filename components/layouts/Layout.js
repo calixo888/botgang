@@ -106,13 +106,13 @@ export default ({ children }) => {
               <h3>Connect with us!</h3>
               <div className="social-icons">
                 <a href="#" target="_blank">
-                  <img src="/img/icons/slack.png" />
+                  <img src="/img/icons/slack.svg" />
                 </a>
                 <a href="#" target="_blank">
-                  <img src="/img/icons/discord.png" />
+                  <img src="/img/icons/discord.svg" />
                 </a>
                 <a href="#" target="_blank">
-                  <img src="/img/icons/github.png" />
+                  <img src="/img/icons/github.svg" />
                 </a>
               </div>
             </div>

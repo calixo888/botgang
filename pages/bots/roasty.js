@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../components/layouts/Layout';
 import Bot from '../../components/Bot';
 
@@ -9,6 +10,11 @@ export default (req, res) => {
 
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Roasty</title>
+        <meta name="description" content="Check out Roasty, a bot that will literally roast you so hard that you won't want to respond and delete it right away!" />
+        <meta name="keywords" content="Slack, Discord, Bot, Bot Gang, Roast, Insult" />
+      </Head>
       <div className="split-grid">
         <div>
           <Bot data={data} />

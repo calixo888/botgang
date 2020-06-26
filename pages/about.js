@@ -5,6 +5,11 @@ import Layout from '../components/layouts/Layout'
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - About Calix Huang</title>
+        <meta name="description" content="Calix Huang is a completely self-taught software & DevOps engineer, using online resources to teach himself every single thing he knows about software engineering. He tries to model my projects around useful ideas that can be deployed to users around the globe. His skills in full-stack development allows him to take a project from an idea to a product." />
+        <meta name="keywords" content="Calix Huang, Developer, Engineer, Bot, Slack, Discord" />
+      </Head>
       <div className="about-grid">
         <img className="calix-picture" src="/img/people/calix.png" alt="Calix Huang" />
 

@@ -12,9 +12,14 @@ export default () => {
     { name: "Roasty", description: "Self-esteem? What's that?", image: "/img/bots/roasty.png", path: "/bots/roasty", tags: ["slack"] },
     { name: "Botlimentor", description: "Let's feel good about ourselves", image: "/img/bots/botlimentor.png", path: "/bots/botlimentor", tags: ["slack"] }
   ];
-  
+
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Home</title>
+        <meta name="description" content="The Bot Gang is a collection of Slack/Discord automation bots that aim to spice up and help productivity within different workspaces and communities." />
+        <meta name="keywords" content="Slack, Discord, Bot, Bot Gang" />
+      </Head>
       <header>
         <div className="split-grid header-grid">
           <div>

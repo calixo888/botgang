@@ -6,6 +6,11 @@ import styles from '../styles/modules/button.module.scss'
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Our Community</title>
+        <meta name="description" content="Join a community of bot developers, hang out with the Bot Gang, and learn new things, as well as play around with the bots that we currently have!" />
+        <meta name="keywords" content="Bot, Bot Gang, Community, Developer" />
+      </Head>
       <div className="split-grid">
         <img src="/img/illustrations/community.svg" />
 

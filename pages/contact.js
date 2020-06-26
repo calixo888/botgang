@@ -4,6 +4,11 @@ import Layout from '../components/layouts/Layout'
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Contact us!</title>
+        <meta name="description" content="Have a question, need support, or just want to give some feedback or a testimonial? Just send a message to the Bot Gang!" />
+        <meta name="keywords" content="Contact, Message, Bot Gang, Slack, Discord" />
+      </Head>
       <h1>Contact</h1>
       <div className="contact-grid">
         <div>

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../components/layouts/Layout';
 import Bot from '../../components/Bot';
 
@@ -9,6 +10,11 @@ export default (req, res) => {
 
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Botlimentor</title>
+        <meta name="description" content="Check out Botlimentor, a bot that will cheer you up with as many compliments as you want, and will make you feel secure with weird parts of yourself you never thought of!" />
+        <meta name="keywords" content="" />
+      </Head>
       <div className="split-grid">
         <div>
           <Bot data={data} />

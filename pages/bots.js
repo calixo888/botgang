@@ -11,6 +11,11 @@ export default () => {
 
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Our Slack/Discord Bots</title>
+        <meta name="description" content="Here's a list of all of the bots that we have at Bot Gang! These are built with Next.js/React, as well as the Slack API and Discord API!" />
+        <meta name="keywords" content="Bot, Slack, Discord, Slack API, Discord API, Next.js, React.js" />
+      </Head>
       <h1>All Bots</h1>
 
       <div className="bots-grid">

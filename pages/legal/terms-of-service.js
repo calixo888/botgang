@@ -4,6 +4,11 @@ import Layout from '../../components/layouts/Layout'
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Terms of Service</title>
+        <meta name="description" content="Our Terms of Service!" />
+      </Head>
+
       <h2><strong>Terms and Conditions</strong></h2>
 
       <p>Welcome to Bot Gang!</p>

@@ -4,6 +4,11 @@ import Layout from '../../components/layouts/Layout'
 export default () => {
   return (
     <Layout>
+      <Head>
+        <title>Bot Gang - Privacy Policy</title>
+        <meta name="description" content="Our Privacy Policy!" />
+      </Head>
+
       <h1>Privacy Policy for Bot Gang</h1>
 
       <p>At Bot Gang, accessible from https://www.botgang.tech/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Bot Gangand how we use it.</p>

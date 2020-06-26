@@ -11,7 +11,7 @@ export default ({ data }) => {
         <div>
           <h3>{data.name}</h3>
           <p>{data.description}</p>
-          
+
           {data.tags.map((tag, key) => {
             return <Tag type={tag} />
           })}

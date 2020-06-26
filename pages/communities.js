@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layouts/Layout'
+import Button from '../components/Button'
+import styles from '../styles/modules/button.module.scss'
 
 export default () => {
   return (
@@ -10,15 +12,15 @@ export default () => {
         <div>
           <h1>Join the Community!</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            We don't just let anyone into the Bot Gang, but for you, I'll make an exception. We gots a Slack workspace and a Discord server that you can join filled with wannabe Bot Gang members, just maybe, I'll give you a shot to prove your worthiness once you join. But that's only if you got the guts to do so.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            If you really want to be taken seriously, join the crew, and we'll make you into the coolest gangster anyone's ever seen.
           </p>
 
           <div className="cta-buttons">
-            <a className="btn btn-secondary" href="#" target="_blank">Join the Slack!</a>
-            <a className="btn btn-info" href="#" target="_blank">Join the Discord!</a>
+            <a className={styles.ghostButton} href="#" target="_blank">Join the Discord!</a>
+            <a className={styles.solidButton} href="https://join.slack.com/t/thebotgang/shared_invite/zt-fl8gglht-sdbVixugoR4mJZ2QToLb_g" target="_blank">Join the Slack!</a>
           </div>
         </div>
       </div>

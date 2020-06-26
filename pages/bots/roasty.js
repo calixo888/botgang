@@ -15,8 +15,8 @@ export default (req, res) => {
 
   return (
     <Layout>
-      <div className="bot-info-grid">
-        <div className="bot-info">
+      <div className="split-grid">
+        <div>
           <Bot data={data} />
 
           <p className="mt-3">

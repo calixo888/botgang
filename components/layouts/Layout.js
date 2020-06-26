@@ -45,7 +45,7 @@ export default ({ children }) => {
         </div>
       </nav>
 
-      <div className="container py-5">
+      <div className="container pt-4 pb-5">
         {children}
       </div>
 

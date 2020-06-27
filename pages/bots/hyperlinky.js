@@ -3,7 +3,7 @@ import Layout from '../../components/layouts/Layout';
 import Bot from '../../components/Bot';
 
 export default (req, res) => {
-  const client_id = process.env.BOTLIMENTOR_CLIENT_ID;
+  const client_id = process.env.HYPERLINKY_CLIENT_ID;
   const oAuthLink = `https://slack.com/oauth/v2/authorize?client_id=${client_id}&scope=commands&user_scope=`
 
   const data = { name: "HyperLinky", description: "Organizing links one workspace at a time.", image: "/img/bots/hyperlinky.png", path: "/bots/hyperlinky", tags: ["slack"] };

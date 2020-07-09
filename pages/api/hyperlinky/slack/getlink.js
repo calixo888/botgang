@@ -6,8 +6,9 @@ const handler = nextConnect();
 handler.use(middleware);
 
 handler.post(async (req, res) => {
+  const workspaceId = req.body.team_id;
   const alias = req.body.text;
-  const link = await req.db.collection("hyperlinky-links").findOne({ alias });
+  const link = await req.db.collection("hyperlinky-links").findOne({ id: workspaceId, alias });
 
   if (link) {
     res.send({

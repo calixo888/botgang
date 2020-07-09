@@ -9,7 +9,9 @@ handler.post(async (req, res) => {
   const workspaceId = req.body.team_id;
 
   req.db.collection("hyperlinky-links").find({ id: workspaceId }).toArray((err, links) => {
-    if (links) {
+    if (err) throw err;
+
+    if (links.length != 0) {
       let linkString = ``;
 
       links.forEach((link) => {

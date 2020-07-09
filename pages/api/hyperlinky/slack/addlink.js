@@ -13,14 +13,24 @@ handler.post(async (req, res) => {
   const link = text.pop();
   const alias = text.join(" ");
 
-  await req.db.collection("hyperlinky-links").save({
-    id: workspaceId, alias, link
-  });
+  // Checking if alias is taken already
+  const existingLink = await req.db.collection("hyperlinky-links").findOne({ id: workspaceId, alias });
 
-  res.send({
-    response_type: "in_channel",
-    text: `Created link "${alias}" with value ${link}!`
-  });
+  if (existingLink == null) {
+    await req.db.collection("hyperlinky-links").save({
+      id: workspaceId, alias, link
+    });
+
+    res.send({
+      response_type: "in_channel",
+      text: `Created link "${alias}" with value ${link}!`
+    });
+  } else {
+    res.send({
+      response_type: "in_channel",
+      text: `The alias "${alias}" is already taken, please use a different one.`
+    });
+  }
 });
 
 export default handler;

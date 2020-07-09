@@ -29,12 +29,25 @@ export default (req, res) => {
         </div>
 
         <div>
-          <h2>Why I built this bot.</h2>
+          <h3>Why use Roasty?</h3>
           <p>
-            I have no freaking idea i know it's stupid
+            Sometimes we're a bit too egotistic, and feel like we're on top of the world. And that's where Roasty comes in. Like my friend Kevin Wang says, "Sometimes you need someone to tell you're a piece of trash." You can thank us later 😉
           </p>
 
-          <h2>Future plans?</h2>
+          <h3>How does it work?</h3>
+          <p>
+            We use the amazing help of the <a href="https://insult.mattbas.org/" target="_blank">Insult API</a> by Matt Bas to endlessly roast whoever so decides to use Roasty.
+          </p>
+
+          <h3>Commands</h3>
+          <ul>
+            <li>
+              <code>/roast [person]</code> - Roasts someone specifically in plural tense
+            </li>
+            <li>
+              <code>/roastme</code> - Feeling great? Not anymore :)
+            </li>
+          </ul>
         </div>
       </div>
     </Layout>

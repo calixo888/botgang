@@ -8,13 +8,13 @@ handler.use(middleware);
 handler.post(async (req, res) => {
   const text = req.body.text.split(/\s+/);
   const author = req.body.user_name;
+  const workspaceId = req.body.team_id;
 
   const link = text.pop();
   const alias = text.join(" ");
 
-
   await req.db.collection("hyperlinky-links").save({
-    alias, link
+    id: workspaceId, alias, link
   });
 
   res.send({

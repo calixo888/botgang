@@ -29,12 +29,17 @@ export default (req, res) => {
         </div>
 
         <div>
-          <h2>Why I built this bot.</h2>
+          <h3>Why use Botlimentor</h3>
           <p>
-            I have no freaking idea i know it's stupid
+            The world is a tough place. Let's feel good about ourselves while using Botlimentor. Though the compliments you may receive are kinda weird, let's just appreciate it :)
           </p>
 
-          <h2>Future plans?</h2>
+          <h3>Commands</h3>
+          <ul>
+            <li>
+              <code>/complimentme</code> - Feeling down? Let's be nice for a moment :)
+            </li>
+          </ul>
         </div>
       </div>
     </Layout>

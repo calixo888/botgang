@@ -4,6 +4,7 @@ import Bot from '../../components/Bot';
 
 export default (req, res) => {
   const client_id = process.env.ROASTY_CLIENT_ID;
+  console.log(client_id);
   const oAuthLink = `https://slack.com/oauth/v2/authorize?client_id=${client_id}&scope=commands&user_scope=`;
 
   const data = { name: "Roasty", description: "Self-esteem? What's that?", image: "/img/bots/roasty.png", path: "/bots/roasty", tags: ["slack"] };

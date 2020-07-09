@@ -3,8 +3,6 @@ import axios from 'axios';
 export default (req, res) => {
   const client_id = process.env.ROASTY_CLIENT_ID;
   const client_secret = process.env.ROASTY_CLIENT_SECRET;
-  console.log(client_id);
-  console.log(client_secret);
 
   if (req.query) {
     if (req.query.code) {

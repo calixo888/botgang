@@ -20,7 +20,7 @@ export default (req, res) => {
           <Bot data={data} />
 
           <p className="mt-3">
-            Ever feeling down or insecure about anything? Allow Botlimentor to encourage and compliment you, even in the weirdest, uncomfortable, and most unorthodox ways. It may seem weird at first but don't worry, you'll get used to it 😉
+            Are the links you're sharing in your workspace becoming untidy and overwhelming? HyperLinky helps to organize those links into easy-to-remember aliases that are native to your workspace, so that you can call on links on demand!
           </p>
 
           <div className="text-right">
@@ -29,12 +29,31 @@ export default (req, res) => {
         </div>
 
         <div>
-          <h2>Why I built this bot.</h2>
+          <h3>Why'd I build this?</h3>
           <p>
-            I have no freaking idea i know it's stupid
+            I noticed that a lot of the links in the Coronavirus Visualization Team (CVT) Slack workspace was getting overwhelming and hard to recall as we grew in size and information management became harder.
           </p>
 
-          <h2>Future plans?</h2>
+          <h3>How does it work?</h3>
+          <p>
+            With HyperLinky, links can be assigned with unique, easy-to-remember aliases that can be called on on demand. You can list out all the links native to your workspace, create links, and delete them!
+          </p>
+
+          <h3>Commands</h3>
+          <ul>
+            <li>
+              <code>/addlink [alias] [link]</code> - Create a new link by supplying the alias and the link you want to assign
+            </li>
+            <li>
+              <code>/alllinks</code> - List out all links that have been saved native to your workspace.
+            </li>
+            <li>
+              <code>/getlink [alias]</code> - Returns the link assigned to the provided alias
+            </li>
+            <li>
+              <code>/deletelink [alias]</code> - Deletes the link assigned to the provided alias
+            </li>
+          </ul>
         </div>
       </div>
     </Layout>

@@ -12,6 +12,16 @@ section {
   grid-gap: 5px;
 }
 
+@media (max-width: 600px) {
+  .faq-grid {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+
+  .header-grid img {
+    display: none;
+  }
+}
+
 .accordion {
   background-color: #eee;
   color: #444;

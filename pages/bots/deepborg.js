@@ -29,12 +29,25 @@ export default (req, res) => {
         </div>
 
         <div>
-          <h2>Why I built this bot.</h2>
+          <h3>Why Deepborg</h3>
           <p>
-            I have no freaking idea i know it's stupid
+            We need to think deeper. Humans are shallow. Deepborg helps us shallow humans to think deeper by asking us questions that only the deepest of the deepest humans from the deep can answer.
           </p>
 
-          <h2>Future plans?</h2>
+          <h3>Who uses Deepborg</h3>
+          <p>
+            The members of CVT use Deepborg, those poor souls...
+          </p>
+
+          <h3>Commands</h3>
+          <ul>
+            <li>
+              <code>/addquestion [question]</code> - Adds a deep question to our database that anyone can be asked
+            </li>
+            <li>
+              <code>/deepquestion</code> - Returns a deep question from our database for everyone to answer
+            </li>
+          </ul>
         </div>
       </div>
     </Layout>

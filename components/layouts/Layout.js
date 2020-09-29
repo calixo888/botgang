@@ -108,11 +108,8 @@ export default ({ children }) => {
                 <a href="https://join.slack.com/t/thebotgang/shared_invite/zt-fl8gglht-sdbVixugoR4mJZ2QToLb_g" target="_blank">
                   <img src="/img/icons/slack.svg" />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://discord.gg/WRkzxBB" target="_blank">
                   <img src="/img/icons/discord.svg" />
-                </a>
-                <a href="https://github.com/calixo888/botgang" target="_blank">
-                  <img src="/img/icons/github.svg" />
                 </a>
               </div>
             </div>

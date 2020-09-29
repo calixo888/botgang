@@ -24,7 +24,7 @@ export default () => {
           </p>
 
           <div className="cta-buttons">
-            <a className={styles.ghostButton} href="#" target="_blank">Join the Discord!</a>
+            <a className={styles.ghostButton} href="https://discord.gg/WRkzxBB" target="_blank">Join the Discord!</a>
             <a className={styles.solidButton} href="https://join.slack.com/t/thebotgang/shared_invite/zt-fl8gglht-sdbVixugoR4mJZ2QToLb_g" target="_blank">Join the Slack!</a>
           </div>
         </div>

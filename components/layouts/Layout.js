@@ -36,11 +36,6 @@ export default ({ children }) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/contact">
-                  <a className="nav-link">Contact</a>
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link href="/bots">
                   <a className="nav-link">Bots</a>
                 </Link>
@@ -65,7 +60,7 @@ export default ({ children }) => {
             <div className="copyright">
               <img src="/img/botgang/botgang-bottom.png" alt="Bot Gang Logo" />
               <br/>
-              <small>&copy; 2020 Bot Gang. Created by <a href="https://www.calix.dev" target="_blank">Calix Huang</a>.</small>
+              <small>&copy; 2020 <a href="https://launchtechllc.com" target="_blank">Launch Tech LLC</a>. All rights reserved.</small>
             </div>
             <div>
               <h3>Navigate</h3>
@@ -78,11 +73,6 @@ export default ({ children }) => {
                 <li>
                   <Link href="/about">
                     <a>About</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <a>Contact</a>
                   </Link>
                 </li>
                 <li>
